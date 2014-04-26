@@ -46,3 +46,10 @@ end
 
 gem 'rspec-rails'
 
+
+group :development do
+  gem 'railroady'
+  gem 'quiet_assets'
+end
+
+
