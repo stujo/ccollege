@@ -46,3 +46,9 @@ end
 
 gem 'rspec-rails'
 
+
+group :development do
+  gem 'railroady'
+end
+
+
