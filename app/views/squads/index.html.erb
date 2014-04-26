@@ -1,0 +1,29 @@
+<h1>Listing squads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Instructor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @squads.each do |squad| %>
+      <tr>
+        <td><%= squad.color %></td>
+        <td><%= squad.instructor %></td>
+        <td><%= link_to 'Show', squad %></td>
+        <td><%= link_to 'Edit', edit_squad_path(squad) %></td>
+        <td><%= link_to 'Destroy', squad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Squad', new_squad_path %>

@@ -1,4 +1,6 @@
 Ccollege::Application.routes.draw do
+  resources :squads
+
   resources :instructors
 
   # The priority is based upon order of creation: first created -> highest priority.
