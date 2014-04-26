@@ -1,4 +1,6 @@
 Ccollege::Application.routes.draw do
+  resources :students
+
   resources :squads
 
   resources :instructors
